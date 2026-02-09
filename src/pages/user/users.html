@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>${pageTitle}</title>
+</head>
+
+<body data-mode="mock">
+  <h1>${pageTitle}</h1>
+
+  <c:forEach var="user" items="${users}">
+    <div class="user">${user.name}</div>
+  </c:forEach>
+
+  <div id="mock-users"></div>
+
+  <!-- 同資料夾引入 -->
+  <script type="module" src="./users.ts"></script>
+</body>
+</html>
