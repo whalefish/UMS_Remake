@@ -20,7 +20,7 @@ function getHtmlInputs() {
 export default defineConfig({
     base: './',          // 打包後路徑相對
     build: {
-        outDir: 'dist/lab',  // 打包輸出資料夾
+        outDir: 'dist',  // 打包輸出資料夾
         emptyOutDir: true,  // 每次build時，重新清空檔案
         minify: false,      // 關掉壓縮，JS 可讀
         sourcemap: true,    // 產生對應 .map，方便 debug
